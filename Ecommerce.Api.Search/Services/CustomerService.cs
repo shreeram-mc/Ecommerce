@@ -25,10 +25,9 @@ namespace Ecommerce.Api.Search.Services
         {
             try
             {
-
                 var client = httpClientFactory.CreateClient("CustomerService");
-
-                var result = await client.GetAsync($"/api/customer/{id}");
+              
+                var result = await client.GetAsync($"/api/Customer/{id}");
 
                 if (result.IsSuccessStatusCode)
                 {

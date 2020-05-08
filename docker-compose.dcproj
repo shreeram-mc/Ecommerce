@@ -2,10 +2,10 @@
 <Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
-    <DockerTargetOS>Windows</DockerTargetOS>
-    <ProjectGuid>4fad21ff-ddf8-42b7-9330-c5dcc6f0e609</ProjectGuid>
+    <DockerTargetOS>Linux</DockerTargetOS>
+    <ProjectGuid>70e10896-3297-45d7-964b-f3af5f692955</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}/api/customer</DockerServiceUrl>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/customer</DockerServiceUrl>
     <DockerServiceName>ecommerce.api.customers</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>

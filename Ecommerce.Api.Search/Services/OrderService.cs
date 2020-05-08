@@ -28,7 +28,7 @@ namespace Ecommerce.Api.Search.Services
 
                 var client = httpClientFactory.CreateClient("OrderService");
 
-                var result = await client.GetAsync($"/api/order/{customerId}");
+                var result = await client.GetAsync($"/api/Order/{customerId}");
 
                 if (result.IsSuccessStatusCode)
                 {
